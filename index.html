@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scholastica Header</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#059ad4",
+            accent: "#cf1c0e",
+            darkbrand: "#383637"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .hero-overlay {
+      background: linear-gradient(
+        to right,
+        rgba(56, 54, 55, 0.9) 0%,
+        rgba(56, 54, 55, 0.7) 40%,
+        rgba(56, 54, 55, 0.4) 100%
+      );
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <!-- Top Bar -->
+  <div class="flex flex-col md:flex-row w-full">
+    <div class="bg-primary text-white flex items-center px-6 py-2 gap-4 md:w-1/3">
+      <span class="font-semibold">Follow Us:</span>
+      <div class="flex gap-3">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+    </div>
+
+    <div class="bg-darkbrand text-white flex flex-wrap items-center justify-between px-6 py-2 gap-4 md:w-2/3">
+      <div class="flex items-center gap-2">
+        <i class="fas fa-location-dot"></i>
+        <span>Kimumu Eldoret</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="fas fa-envelope"></i>
+        <span>info@scholastica.co.ke</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="fas fa-phone"></i>
+        <span>+254 208 560 0747, 0720 541519</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 shadow-md bg-white">
+    <img src="/images/Copy of logo.png" alt="logo" width="60px">
+
+    <ul class="hidden lg:flex items-center gap-8 font-semibold text-darkbrand">
+      <li class="hover:text-primary cursor-pointer">Home</li>
+      <li class="hover:text-primary cursor-pointer">About Us</li>
+      <li class="hover:text-primary cursor-pointer">Events</li>
+      <li class="hover:text-primary cursor-pointer">Gallery</li>
+      <li class="hover:text-primary cursor-pointer">Portal</li>
+      <li class="hover:text-primary cursor-pointer">Blog</li>
+    </ul>
+
+    <div class="flex items-center gap-4">
+      <i class="fas fa-search text-xl cursor-pointer text-darkbrand"></i>
+      <button class="bg-accent hover:opacity-90 text-white px-6 py-3 rounded-full font-semibold">
+        APPLY NOW
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative h-screen flex items-center">
+    <div class="absolute inset-0">
+      <img 
+        src="/images/WhatsApp Image 2026-01-13 at 10.09.53 AM.jpeg"
+        alt="Graduation"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-white">
+      <h4 class="uppercase tracking-widest text-primary font-semibold mb-6">
+        Welcome To Scholastica!
+      </h4>
+
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+        Start Your Beautiful <br />
+        And <span class="text-primary">Bright</span> Future
+      </h1>
+
+      <p class="max-w-2xl text-gray-200 text-lg mb-10">
+        Where Learning Meets Greatness.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <button class="bg-primary hover:opacity-90 text-white px-8 py-4 rounded-full font-semibold">
+          ABOUT MORE →
+        </button>
+
+        <button class="bg-white text-darkbrand px-8 py-4 rounded-full font-semibold hover:bg-gray-200">
+          LEARN MORE →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 lg:px-20">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Image -->
+      <div class="opacity-0 translate-y-10 transition-all duration-1000" id="aboutImage">
+        <img 
+          src="/images/kids.jpeg" 
+          alt="Online Learning" 
+          class="rounded-2xl shadow-xl w-full object-cover"
+        />
+      </div>
+
+      <!-- Content -->
+      <div class="opacity-0 translate-y-10 transition-all duration-1000" id="aboutContent">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6 text-primary">
+          About Us
+        </h2>
+        
+        <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+          We are committed to making education accessible, flexible, and career-focused. 
+          Our online learning platform offers high-quality courses, expert-led training, 
+          and interactive video lessons designed to help you grow professionally and personally.
+        </p>
+
+        <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+          Whether you're looking to earn a degree, gain new skills, or advance your career, 
+          our programs are built to provide real-world knowledge that delivers measurable results.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+ <section class="max-w-7xl w-full mx-auto py-16 px-6">
+
+      <div class="w-[70%] mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold text-primary mb-4">
+        Our School
+      </h2>
+      <p class="text-gray-600 text-lg">
+        A strong foundation for every stage of learning.
+      </p>
+    </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- CARD 1 -->
+    <div class="group relative">
+      <div class="overflow-hidden rounded-2xl">
+        <img src="/images/download (3).jpg"
+             class="w-full h-60 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <div class="bg-[#059ad4] text-white rounded-2xl -mt-10 relative z-10 p-6 shadow-xl transition duration-500 group-hover:-translate-y-2">
+        <h3 class="text-xl font-bold text-white-400 mb-3">
+          Pre-School
+        </h3>
+
+        <p class="text-white-200 text-sm leading-relaxed mb-6">
+          Where little minds begin big adventures – learning through play and curiosity.
+        </p>
+
+        <div class="flex justify-center">
+          <button class="bg-[#cf1c0e] text-white px-6 py-2 rounded-full font-semibold hover:brightness-110 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="group relative">
+      <div class="overflow-hidden rounded-2xl">
+        <img src="/image.png"
+             class="w-full h-60 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <div class="bg-[#059ad4] text-white rounded-2xl -mt-10 relative z-10 p-6 shadow-xl transition duration-500 group-hover:-translate-y-2">
+        <h3 class="text-xl font-bold text-white-400 mb-3">
+          Lower Primary
+        </h3>
+
+        <p class="text-gray-200 text-sm leading-relaxed mb-6">
+         Building strong foundations for lifelong learning and with a creativity mindset.
+        </p>
+
+        <div class="flex justify-center">
+          <button class="bg-[#cf1c0e] text-white px-6 py-2 rounded-full font-semibold hover:brightness-110 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="group relative">
+      <div class="overflow-hidden rounded-2xl">
+        <img src="/images/image.png"
+             class="w-full h-60 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <div class="bg-[#059ad4] text-white rounded-2xl -mt-10 relative z-10 p-6 shadow-xl transition duration-500 group-hover:-translate-y-2">
+        <h3 class="text-xl font-bold text-white-400 mb-3">
+          Upper Primary
+        </h3>
+
+        <p class="text-gray-200 text-sm leading-relaxed mb-6">
+          Exploring, discovering, and growing together in a joyful learning environment.
+        </p>
+
+        <div class="flex justify-center">
+          <button class="bg-[#cf1c0e] text-white px-6 py-2 rounded-full font-semibold hover:brightness-110 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="group relative">
+      <div class="overflow-hidden rounded-2xl">
+        <img src="/images/9 Steps to Solving an Impossible Brain Teaser in a Tech Interview (Without Breaking a Sweat) _ The Muse.jpg"
+             class="w-full h-60 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <div class="bg-[#059ad4] text-white rounded-2xl -mt-10 relative z-10 p-6 shadow-xl transition duration-500 group-hover:-translate-y-2">
+        <h3 class="text-xl font-bold text-white-400 mb-3">
+          Junior Secondary
+        </h3>
+
+        <p class="text-gray-200 text-sm leading-relaxed mb-6">
+          Preparing young learners for the future with knowledge, confidence, and character.
+        </p>
+
+        <div class="flex justify-center">
+          <button class="bg-[#cf1c0e] text-white px-6 py-2 rounded-full font-semibold hover:brightness-110 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Optional JS for Interactive Highlight -->
+<script>
+  // Vanilla JS: Highlight card on click
+  const cards = document.querySelectorAll('.level-card');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => c.classList.remove('ring-4', 'ring-accent'));
+      card.classList.add('ring-4', 'ring-accent');
+    });
+  });
+</script>
+
+
+<!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-gray-50 w-full">
+
+    <!-- Heading -->
+    <div class="w-[70%] mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold text-primary mb-4">
+        Our Gallery
+      </h2>
+      <p class="text-gray-600 text-lg">
+        A glimpse into our school life and events
+      </p>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="w-[70%] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[150px]">
+
+      <!-- Tall Image -->
+      <div class="row-span-2 overflow-hidden rounded-xl shadow-lg">
+        <img src="/images/image.png"
+             class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Normal Image -->
+      <div class="overflow-hidden rounded-xl shadow-lg">
+        <img src="/images/tikwondo.jpeg"
+             class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Wide Image -->
+      <div class="col-span-2 overflow-hidden rounded-xl shadow-lg">
+        <img src="/images/WhatsApp Image 2026-01-13 at 10.09.53 AM.jpeg"
+             class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Tall Image -->
+      <div class="row-span-2 overflow-hidden rounded-xl shadow-lg">
+        <img src="/images/tikwondo.jpeg"
+             class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Normal -->
+      <div class="overflow-hidden rounded-xl shadow-lg">
+        <img src="/image.png"
+             class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Normal -->
+      <div class="overflow-hidden rounded-xl shadow-lg">
+        <img src="/images/image.png"
+             class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+
+    </div>
+
+  </section>
+
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="py-16">
+
+  <!-- Small label -->
+  <p class="text-center text-[#059ad4] font-medium mb-2 fade-up">
+    Why Choose Us
+  </p>
+
+  <!-- Main heading -->
+  <h2 class="text-center text-3xl md:text-5xl font-bold text-gray-700 mb-12 fade-up">
+    The Best School <br> For Your Child
+  </h2>
+
+
+  <!-- Content Grid -->
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center px-6">
+
+    <!-- LEFT FEATURES -->
+    <div class="space-y-8 fade-up">
+
+      <!-- Feature -->
+      <div class="flex items-start gap-4">
+        <div class="bg-[#059ad4] p-4 rounded-lg">
+          🎓
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-700">
+            Our Commitment to Excellence
+          </h3>
+          <p class="text-gray-500 text-sm">
+            Delivering Quality Education, Strong Values, and a Safe Learning Environment
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature -->
+      <div class="flex items-start gap-4">
+        <div class="bg-[#059ad4] p-4 rounded-lg">
+          🏫
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-700">
+            What Sets Us Apart
+          </h3>
+          <p class="text-gray-500 text-sm">
+            High Academic Standards, Dedicated Staff, and Holistic Student Development
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- CENTER IMAGE -->
+    <div class="flex justify-center fade-up">
+
+      <img
+        src="/images/Untitled design.png"
+        class="w-64 md:w-80 "
+      >
+
+    </div>
+
+
+    <!-- RIGHT FEATURES -->
+    <div class="space-y-8 fade-up">
+
+      <!-- Feature -->
+      <div class="flex items-start gap-4">
+        <div class="bg-blue-100 p-4 rounded-lg">
+          📘
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-700">
+            Our Distinct Advantage
+          </h3>
+          <p class="text-gray-500 text-sm">
+            Excellence in Academics, Character, and Community
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature -->
+      <div class="flex items-start gap-4">
+        <div class="bg-pink-100 p-4 rounded-lg">
+          🧩
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-700">
+            The Difference We Make
+          </h3>
+          <p class="text-gray-500 text-sm">
+            Empowering Learners Through Quality Education and Strong Values
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Call To Action Section -->
+<section style="background: #0599d437;" class="py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Admissions Now Open
+    </h2>
+
+    <!-- Description -->
+    <p class="text-lg md:text-xl mb-6 max-w-3xl mx-auto">
+      Take the first step toward excellence. Our dedicated teachers, modern 
+      facilities, and strong values create the perfect foundation for lifelong success.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      
+      <!-- Enroll Button -->
+      <a href="#"
+         style="background:#cf1c0e"
+         class="text-white font-semibold px-8 py-3 rounded-lg shadow hover:opacity-90 transition duration-300">
+        Enroll Now
+      </a>
+
+      <!-- Contact Button -->
+      <a href="#"
+         style="border-color:#383637; color:#383637"
+         class="bg-white border-2 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+        Contact Our Admissions Office
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-darkbrand text-white py-12 mt-16">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+<div>
+<h3 class="text-2xl font-bold text-primary mb-4">Scholastica</h3>
+<p class="text-gray-300 text-sm leading-relaxed">
+Building bright futures through quality education, strong values, and modern learning.
+</p>
+</div>
+
+<div>
+<h4 class="font-semibold mb-4 text-lg">Quick Links</h4>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li>Home</li>
+<li>About Us</li>
+<li>Gallery</li>
+<li>Admissions</li>
+<li>Contact</li>
+</ul>
+</div>
+
+<div>
+<h4 class="font-semibold mb-4 text-lg">Contact Info</h4>
+
+<p class="text-gray-300 text-sm">
+Kimumu Eldoret<br>
+info@scholastica.co.ke<br>
++254 208 560 0747
+</p>
+</div>
+
+</div>
+
+<div class="text-center mt-10 border-t border-gray-700 pt-6 text-gray-400 text-sm">
+© 2026 Scholastica. All Rights Reserved.
+</div>
+
+</footer>
+
+  <!-- IntersectionObserver Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      observer.observe(document.getElementById('aboutImage'));
+      observer.observe(document.getElementById('aboutContent'));
+    });
+  </script>
+
+</body>
+</html>
